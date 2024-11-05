@@ -173,7 +173,7 @@ a:focus {
 }
 
 .content__title {
-  margin-inline-end: 15%;
+  margin-inline-end: var(--title-margin-inline-end);
   margin-block-end: var(--content__max_padding);
   color: var(--accent-color);
   font-size: var(--main-font-size);
@@ -192,7 +192,7 @@ a:focus {
   text-align: left;
 }
 
-.section_what .content__section {
+.section__what .content__section {
   display: grid;
   gap: var(--content__max_padding);
 }
@@ -299,20 +299,21 @@ img {
 @media (min-width: 500px) and (max-width: 1000px) {
   :root {
     --min-height: 1024px;
+    --title-margin-inline-end: 9%
   }
 
-  .section_why,
+  .section__why,
   .section__how {
     display: grid;
     grid-template-columns: 36% 64%;
   }
 
-  .section_why .content__title,
+  .section__why .content__title,
   .section__how .content__title {
     margin-inline-end: 11%;
   }
 
-  .section_what .content__title {
+  .section__what .content__title {
     margin-inline-end: 80%;
   }
 
@@ -341,19 +342,19 @@ img {
     align-self: flex-start;
   }
 
-  .section_why,
+  .section__why,
   .section__how {
     display: grid;
     grid-template-columns: 34% 66%;
   }
 
-  .section_what .content__section {
+  .section__what .content__section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .section_what .content__title {
+  .section__what .content__title {
     margin-inline-end: 70%;
   }
 

@@ -27,5 +27,6 @@
   --content__min_padding: 10px;
   --gap__content: 50px;
   --section_gallery_min_width: 230px;
+  --title-margin-inline-end: 4%;
 }
 
