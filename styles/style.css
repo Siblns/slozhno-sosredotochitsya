@@ -234,8 +234,6 @@ img {
 }
 
 .footer {
-  justify-self: center;
-  align-self: center;
   align-content: center;
   height: 100vh;
   min-height: var(--min-height);
@@ -334,6 +332,10 @@ img {
   :root {
     --min-height: 768px;
     --section_gallery_min_width: 260px;
+  }
+
+  .title-header {
+    --color-shadow: #FF0070;
   }
 
   .title-header {
