@@ -13,6 +13,7 @@
 --display_rec: block;
 --bg-color: #000028;
 --text-color: #F1B2CE;
+--text-color-button: #FF0070;
 --text-decor-color: #000028;
 --header-color: #db00ff;
 --main-font: 'IBM Plex mono';
@@ -21,9 +22,5 @@
 --line-hover:  rgb(255 0 112 / 0.4);
 --line-hover-border:  #FF0070;
 --bg-image: url(../images/cover-image.png);
-}
-
-.page.theme_dark .header__theme-menu {
-  --text-color: #FF0070;
 }
 

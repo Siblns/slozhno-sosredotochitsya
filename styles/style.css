@@ -133,7 +133,7 @@
   position: relative;
   border: none;
   padding: 0 11px;
-  color: var(--text-color);
+  color: var(--text-color-button);
   font-family: inherit;
   font-size: var(--main-font-size);
   line-height: 18px;
@@ -299,7 +299,7 @@ img {
 @media (min-width: 500px) and (max-width: 1000px) {
   :root {
     --min-height: 1024px;
-    --title-margin-inline-end: 9%
+    --title-margin-inline-end: 9%;
   }
 
   .section__why,
