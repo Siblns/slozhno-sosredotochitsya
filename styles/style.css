@@ -234,13 +234,10 @@ img {
 }
 
 .footer {
-  align-content: center;
-  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
   min-height: var(--min-height);
-}
-
-.footer .title-header {
-  text-align: center;
 }
 
 @media (min-width: 500px) {
@@ -336,9 +333,6 @@ img {
 
   .title-header {
     --color-shadow: #FF0070;
-  }
-
-  .title-header {
     line-height: 129px;
   }
 
