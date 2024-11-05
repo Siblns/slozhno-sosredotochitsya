@@ -8,5 +8,35 @@
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
+  
+    --bg-color: #000028;
+  --text-decor-color: #000028;
+  --accent-color: #FF0070;
+  --header-color: #db00ff;
+  --main-font: 'IBM Plex mono';
+  --color-shadow: #FF0070;
+  --line-hover:  rgb(255 0 112 / 0.4);
+  --line-hover-border:  #FF0070;
+*/
+--min-height: 668px;
+--display_rec: block;
+--bg-color: #000028;
+
+--text-color: #F1B2CE;
+--text-decor-color: #000028;
+
+--header-color: #db00ff;
+--main-font: 'IBM Plex mono';
+
+--accent-color: #FF0070;
+--color-shadow: #FF0070;
+
+--line-hover:  rgb(255 0 112 / 0.4);
+--line-hover-border:  #FF0070;
+--bg-image: url(../images/cover-image.png);
 }
+
+.page.theme_dark .header__theme-menu {
+  --text-color: #FF0070;
+}
+
