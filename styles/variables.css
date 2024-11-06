@@ -4,7 +4,9 @@
 */
 
 :root {
-  --min-height: 668px;
+  --min-height: 668px;  
+  --middle-height: 768px;
+  --max-height: 1024px;
   --display_rec: block;
   --bg-color: #000028;
   --text-color: #F1B2CE;
@@ -12,6 +14,7 @@
   --header-color: #db00ff;
   --main-font: 'IBM Plex mono';
   --accent-color: #FF0070;
+  --color_content__title: #FF0070;
   --color-shadow: #FF0070;
   --text-color-button: #FF0070;
   --line-hover:  rgb(255 0 112 / 0.4);

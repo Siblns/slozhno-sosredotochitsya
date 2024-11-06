@@ -11,6 +11,10 @@
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -19,12 +23,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap__content);
-  min-height: 1024px;
+ /* min-height: 1024px;*/
   font-size: var(--main-font-size);
 }
 
 .content-section {
-  padding: 0 2vi;
+  padding: 0 10px;
 }
 
 .header {
@@ -33,11 +37,6 @@
   height: 100vh;
   min-height: var(--min-height);
   padding: var(--content-padding);
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .decorated-zone {
@@ -100,11 +99,12 @@
   color: var(--header-color);
   font-weight: var(--accent-font-weight);
   font-size: var(--title-font-size-mobile);
-  line-height: clamp(6.1875rem, 6.8062rem + -1.2891vw, 5.98125rem);
+  line-height: clamp(5.1875rem, 6.8062rem + -1.2891vw, 5.98125rem);
   text-align: left;
 }
 
 .title-decor {
+  height: fit-content;
   color: var(--text-decor-color);
   background-color: var(--accent-color);
 }
@@ -175,7 +175,7 @@ a:focus {
 .content__title {
   margin-inline-end: var(--title-margin-inline-end);
   margin-block-end: var(--content__max_padding);
-  color: var(--accent-color);
+  color: var(--color_content__title);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 }
@@ -184,6 +184,7 @@ a:focus {
   margin-block-end: var(--content__min_padding);
   font-weight: var(--accent-font-weight);
   font-size: var(--main-font-size);
+  line-height: 23.4px;
 }
 
 .content__paragraph {
@@ -209,6 +210,10 @@ a:focus {
   font-weight: var(--main-font-weight);
 }
 
+.section__how .content__title {
+    margin-inline-end: 0;
+}
+
 .content__paragraph a:focus-visible {
   outline: 1px solid var(--text-color, #f1b2ce);
   outline-offset: 1px;
@@ -223,7 +228,7 @@ a:focus {
 
 .section_gallery {
   display: grid;
-  gap: 6px;
+  gap: 10px;
 }
 
 img {
@@ -235,19 +240,28 @@ img {
 
 .footer {
   display: grid;
-  align-items: center;
   justify-items: center;
+  align-items: center;
+  height: 100vh;
   min-height: var(--min-height);
+  
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 500px) {
+
+  .content-section {
+    padding: 0 20px;
+  }
+
   :root {
     --title-font-size-mobile: var(--title-font-size-dekstop);
     --gap__content: 80px;
   }
 
   .title-header {
-    margin-inline-start: -2%;
+    margin-inline-start: -3%;
   }
 
   .header__paragraph {
@@ -256,14 +270,6 @@ img {
 
   .content__paragraph {
     padding: 0;
-  }
-
-  .section_gallery {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(var(--section_gallery_min_width), 1fr)
-    );
-    grid-template-rows: repeat(auto-fill, minmax(144px, 1fr));
   }
 
   .images_tape {
@@ -297,20 +303,25 @@ img {
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
-  :root {
-    --min-height: 1024px;
+  
+  .header,
+  .footer {
+    --min-height: var(--max-height);
+  }
+
+  .footer {
     --title-margin-inline-end: 9%;
   }
 
   .section__why,
   .section__how {
     display: grid;
-    grid-template-columns: 36% 64%;
+    grid-template-columns: 35% 65%;
   }
 
   .section__why .content__title,
   .section__how .content__title {
-    margin-inline-end: 11%;
+    margin-inline-end: 10%;
   }
 
   .section__what .content__title {
@@ -318,7 +329,7 @@ img {
   }
 
   .section_gallery {
-    gap: 18px;
+    gap: 15px;
   }
 
   .section__can_img .content_header {
@@ -327,14 +338,20 @@ img {
 }
 
 @media (min-width: 1000px) {
-  :root {
-    --min-height: 768px;
-    --section_gallery_min_width: 260px;
+  
+  .header,
+  .footer{
+    --min-height: var(--middle-height);
   }
 
   .title-header {
     --color-shadow: #FF0070;
+    margin-inline-start: -2%;
     line-height: 129px;
+  }
+
+  .footer .title-header {
+    margin-inline-start: 0;
   }
 
   .header__theme-menu {
@@ -360,6 +377,7 @@ img {
 
   .section_gallery {
     gap: 18px 16px;
-    margin-block-start: 23px;
+    margin-block-start: 20px;
   }
+
 }
