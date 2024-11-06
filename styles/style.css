@@ -292,7 +292,7 @@ img {
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) { 
+@media (min-width: 500px) and (max-width: 1000px) {
   .header,
   .footer {
     --min-height: var(--max-height);
