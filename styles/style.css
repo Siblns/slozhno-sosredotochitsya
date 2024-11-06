@@ -39,7 +39,7 @@
 }
 
 .decorated-zone {
-  position: relative;  
+  position: relative;
 }
 
 .decorated-zone::before {
@@ -237,7 +237,7 @@ img {
   justify-items: center;
   align-items: center;
   height: 100vh;
-  min-height: var(--min-height);  
+  min-height: var(--min-height);
   margin: 0;
   padding: 0;
 }
@@ -292,7 +292,7 @@ img {
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {  
+@media (min-width: 500px) and (max-width: 1000px) { 
   .header,
   .footer {
     --min-height: var(--max-height);
@@ -321,14 +321,14 @@ img {
   }
 }
 
-@media (min-width: 1000px) {  
+@media (min-width: 1000px) {
   .header,
   .footer {
     --min-height: var(--middle-height);
     --color-shadow: #FF0070;
   }
 
-  .title-header {   
+  .title-header {
     margin-inline-start: -2%;
     line-height: clamp(1.4625rem, -2.3511rem + 16.2712vw, 8.0625rem);
     /*129px;*/
