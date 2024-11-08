@@ -9,37 +9,34 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --min-height: 668px;
-  --middle-height: 768px;
-  --max-height: 1024px;
   --bg-color: #FFF1F7;
   --accent-color: #FF8dcb;
   --header-color: #ffc2e6;
   --text-color: #353430;
-  --text-color-button: #353430;
-  --text-decor-color: #353430;
+  --text-color-button: var(--text-color);
+  --text-decor-color: var(--text-color);
   --line-hover: rgb(50 49 45 / 0.4);
-  --line-hover-border: #353430;
+  --line-hover-border: var(--text-color);
   --bg-image: url(../images/cover-image-light.png);
-  --display_rec: none;
-  --color-shadow: #FF8dcb;
-  --color_content__title: #353430;
+  --display-rec: none;
+  --color-shadow: var(--accent-color);
+  --color-content-title: var(--text-color);
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
-    --min-height: 668px;
     --bg-color: #FFF1F7;
     --accent-color: #FF8dcb;
     --header-color: #ffc2e6;
     --text-color: #353430;
-    --text-color-button: #353430;
-    --text-decor-color: #353430;
+    --text-color-button: var(--text-color);
+    --text-decor-color: var(--text-color);
     --line-hover: rgb(50 49 45 / 0.4);
-    --line-hover-border: #353430;
+    --line-hover-border: var(--text-color);
     --bg-image: url(../images/cover-image-light.png);
-    --display_rec: none;
-    --color-shadow: #FF8dcb;
-    --color_content__title: #353430;
+    --display-rec: none;
+    --color-shadow: var(--accent-color);
+    --color-content-title: var(--text-color);
   }
 }

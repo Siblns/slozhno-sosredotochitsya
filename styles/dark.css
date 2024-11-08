@@ -9,21 +9,18 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
 */
-  --min-height: 668px;
-  --middle-height: 768px;
-  --max-height: 1024px;
-  --display_rec: block;
+  --display-rec: block;
   --bg-color: #000028;
   --text-color: #F1B2CE;
-  --text-color-button: #FF0070;
+  --accent-color: #FF0070;
+  --text-color-button: var(--accent-color);
   --text-decor-color: #000028;
   --header-color: #db00ff;
   --main-font: 'IBM Plex mono';
-  --accent-color: #FF0070;
-  --color_content__title: #FF0070;
-  --color-shadow: #FF0070;
+  --color-content-title: var(--accent-color);
+  --color-shadow: var(--accent-color);
   --line-hover:  rgb(255 0 112 / 0.4);
-  --line-hover-border:  #FF0070;
+  --line-hover-border:  var(--accent-color);
   --bg-image: url(../images/cover-image-dark.png);
 }
 
