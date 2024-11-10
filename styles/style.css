@@ -279,12 +279,12 @@ a:focus-visible {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-auto-rows: minmax(192px, auto);
-    margin-block-start: 0;    
+    margin-block-start: 0;
     gap: 20px;
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) { 
+@media (min-width: 500px) and (max-width: 1000px) {
   .header,
   .footer {
     min-height: 1024px;
