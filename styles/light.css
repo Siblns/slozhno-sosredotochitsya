@@ -13,7 +13,6 @@
   --accent-color: #FF8dcb;
   --header-color: #ffc2e6;
   --text-color: #353430;
-  --accent-color-shadow: #FF0070;
   --text-color-button: var(--text-color);
   --text-decor-color: var(--text-color);
   --line-hover: rgb(50 49 45 / 0.4);
@@ -24,6 +23,13 @@
   --color-content-title: var(--text-color);
 }
 
+@media (min-width: 1000px) {
+  .header__title,
+  .footer__title {
+    --color-shadow: #FF0070;
+  }
+}
+
 @media (prefers-color-scheme: light) {
 
   :root {
@@ -31,7 +37,6 @@
     --accent-color: #FF8dcb;
     --header-color: #ffc2e6;
     --text-color: #353430;
-    --accent-color-shadow: #FF0070;
     --text-color-button: var(--text-color);
     --text-decor-color: var(--text-color);
     --line-hover: rgb(50 49 45 / 0.4);
@@ -40,5 +45,12 @@
     --display-rec: none;
     --color-shadow: var(--accent-color);
     --color-content-title: var(--text-color);
+  }
+
+  @media (min-width: 1000px) {
+    .header__title,
+    .footer__title {
+      --color-shadow: #FF0070;
+    }
   }
 }

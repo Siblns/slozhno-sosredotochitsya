@@ -14,7 +14,6 @@
   --accent-color: #FF0070;
   --color-content-title: var(--accent-color);
   --color-shadow: var(--accent-color);
-  --accent-color-shadow: var(--accent-color);
   --text-color-button: var(--accent-color);
   --line-hover: rgb(255 0 112 / 0.4);
   --line-hover-border: var(--accent-color);
